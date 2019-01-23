@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+.navigation {
+    display: flex;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    width: 100%;
+}
+
+.sectionContent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contentBox {
+    display: flex;
+    width: 120rem;
+    height: 10rem;
+    background-color: transparent;
+    background-size: contain;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentButton {
+    display: flex;
+    width: 120rem;
+    height: 10rem;
+    background-color: transparent;
+    background-size: contain;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./appView.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="navigation__logo">
+                Logo
+            </div>
+            <div class="navigation__Register">
+                <a id="registerBtn" href="#">Sign Up</a>
+                <span>&nbsp;|&nbsp;</span> 
+                <a id="signinBtn" href="#">Sign In</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionContent">
+            <div class="contentBox">
+                <div class="contentBox_box">
+                <!-- !!!!OLD VERSION!!!! -->
+                    <!--<div class="result">
+                        <div style="display: flex">
+                            <div class="logoBox">
+                                <div class="logobox__logo">
+                                    Logo
+                                </div>
+                            </div>
+                            <div class="nameBox">
+                                <div class="namebox__name">
+                                    name
+                                </div>
+                            </div>
+                        </div>
+                        <div class="descBox">
+                            <div class="descBox__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt at urna eget tempus. Morbi nunc eros, pharetra in lectus ac, varius porttitor eros. Nunc molestie nec sem eu tempor. Phasellus purus ex, sodales vel nulla ac, feugiat lacinia tellus. Nulla sapien neque, gravida elementum mi ac, commodo lacinia urna. In auctor condimentum lorem, feugiat sodales mi varius ac. Nullam ut commodo libero. Maecenas odio felis, ultricies sit amet viverra vitae, ullamcorper eu orci.
+                            </div>
+                        </div>
+                        <div class="infosBox">
+                            <p>Address</p>
+                            <p>Phone</p>
+                            <p>Email</p>
+                        </div>
+                        <div class="touchbar"style="height: 5%; width: 100%; background-color: black">
+
+                        </div>
+                    </div>-->
+
+                    <!-- !!!NEW VERSION!!! CSS in style in order to have a backup with the old version-->
+                    <div class="result">
+                        <div class="blackbar" style="height: 3%; width: 100%; background-color: black">
+
+                        </div>
+                        <div class="logoandname" style="display: flex; flex-flow: row; height: 15%;">
+                            <div class="logo" style="height: 100%; width: 100%; background-color: red">
+
+                            </div>
+                            <div class="name" style="height: 100%; width: 100%; background-color: blue">
+
+                            </div>
+                        </div>
+                        <div class="bodyApp" style="height: 74%; width: auto; background-color: green; display: flex; padding: 15px; flex-flow: column;">
+                            <div class="desc" style="width: 100%; height: 60%; background-color: blueviolet; margin-bottom: 15px">
+
+                            </div>
+                            <div class="infos" style="width: 100%; height: 37%; background-color: rgb(107, 107, 85)">
+                            </div>
+                        </div>
+                        <div class="downbar" style="height: 5%; width: 100%; background-color: black">
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBox_modifier">
+                    <form method="POST" action="#">
+                            <input class="formInput" type="text" name="name" id="name" placeholder="Name of the company">
+                            <input class="formInput" type="text" name="email" id="email" placeholder="Email">
+                            <input class="formInput" type="text" name="address" id="address" placeholder="Address">
+                            <input class="formInput" type="text" name="phone" id="phone" placeholder="Phone">
+                            <textarea class="taInput" type="text" name="description" id="description" placeholder="Description"></textarea>
+                            <input type="file" class="formInput" name="logo" id="logo" placeholer="Logo">
+                            <input type="submit" name="submit" class="submitBtn">
+                    </form>
+                </div>       
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <div id="modalRegister">
+        <div class="modalRegister__content">
+                <div class="contentBox_modifier">
+                    <form method="POST" action="#">
+                            <input class="formInput" type="text" name="name" id="name" placeholder="Name">
+                            <input class="formInput" type="text" name="firstname" id="firstname" placeholder="Firstname">
+                            <input class="formInput" type="text" name="email" id="email" placeholder="Email">
+                            <input class="formInput" type="text" name="password" id="password" placeholder="Password">
+                            <input type="submit" name="submit" class="submitBtn">
+                            <input type="button" id="cancelRegBtn" value="cancel">
+                    </form>
+                </div>  
+        </div>
+    </div>
+
+    <div id="modalSignin">
+            <div class="modalSignin__content">
+                    <div class="contentBox_modifier">
+                        <form method="POST" action="#">
+                            <input class="formInput" type="text" name="email" id="email" placeholder="Email">
+                            <input class="formInput" type="text" name="password" id="password" placeholder="Password">
+                            <input type="submit" name="submit" class="submitBtn">
+                            <input type="button" id="cancelSigninBtn" value="cancel">
+                        </form>
+                    </div>  
+            </div>
+        </div>
+
+    <script src="./appView.js"></script>
+</body>
+</html>
